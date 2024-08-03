@@ -101,8 +101,8 @@ This section will contain links for above mentioned web pages
 
 <!-- FOOTNOTES -->
 
-[^1]: Level Basics Documentation [(Link)](./documents/BASICS.md)
+[^1]: Level Basics Documentation [(Link)](/documents/BASICS)
 
-[^2]: Level Intermediate Documentation [(Link)](./documents/INTERMEDIATE.md)
+[^2]: Level Intermediate Documentation [(Link)](/documents/INTERMEDIATE)
 
-[^3]: Level Advanced Documentation [(Link)](./documents/ADVANCED.md)
+[^3]: Level Advanced Documentation [(Link)](/documents/ADVANCED)
