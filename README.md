@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- Anchor for `back-to-top` buttons
+-->
 
-## Getting Started
+<a id="back-to-top"></a>
 
-First, run the development server:
+<!-- PROJECT INTRODUCTION
+This part will introduce the project name and author. I also leave the type of
+project - which is Web Development - to specify the learning area.
+-->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<div align="center">
+  <h3>🏔️ Todo List App 🚀</h3>
+  <i>
+    Web Development - Project (1) <br/>
+    Author: Ton Minh Hoang
+  </i>
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This is the project that I use to learn web development with
+[NextJS][NextJS-Link] framework. I will divide this project into **3 main versions**
+which demonstrate the learning process of myself from basics concepts to
+advanced techniques. Consequently, these 3 versions will be named accordingly
+to the level that I am learning in the following sequence:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Basics
+- Intermediate
+- Advanced
 
-## Learn More
+For each version, I will specify the goals to achieve and also document the
+whole process of learning and planning.
 
-To learn more about Next.js, take a look at the following resources:
+> [!NOTE]
+> To demonstrate the problem-solving skills as well as for learning purposes, I
+> will also includes small notes of the problems I encounter and how I have
+> solved it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Skills I have learned from the project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. NextJS _and_ ReactJS
+   - React Hooks
+   - Functional Components
+   - Conditional Rendering
+   - Rendering Lists
+   - Type Safety by using TypeScript Types and Interfaces
+   - Basics **CRUD API** _and_ **middleware** using NextJS server components
+2. Markdown
+3. Git and Github
+   - Pull Request
+   - Git Merge / Rebase / Squash
+   - Version Control
+   - Gitflow
 
-## Deploy on Vercel
+#### Summary of each level
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##### Basics [^1]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+In this level I mainly focus on learning the basics of ReactJS, which includes:
+
+- React Hooks (useState, useEffect)
+- Functional Components
+- Conditional Rendering, and
+- List Rendering
+
+Moreover, apart from learning those mentioned features provided by Nextjs, I
+also try to learn HTML / CSS with a CSS pre-processor: SASS. I believe, by
+learning the fundamentals first, I can use modern UI frameworks like [shadcn][Shadcn-Link]
+or [tailwindCSS][tailwindCSS-Link] more efficient.
+
+##### Intermediate [^2]
+
+After having basic understanding of how ReactJS works, I will spend more time
+on learning **server actions** as well as improving the UI of the application
+through animations. Here are the goals of this level:
+
+- Learn advanced React Hooks (useContext, useRef, etc.)
+- Learn **NextJS API Routing System** _and_ **Middlewares**
+- Using ORM library to interact with databases and do basic actions
+- Authentication
+
+Last but not least, learning a state management tool like [Redux][Redux-Link]
+is also in plan!
+
+##### Advanced [^3]
+
+To wrap up the project, I will refactor the whole code base to have a cleaner
+look. Speaking of which, implementing a _clean architecture_ is also an
+important aspect in application development in general, thus I plan to refactor
+the code base in this specific direction. Ultimately, the last 2 topics that I
+want to learn are Lazy Loading and Memoization.
+
+<!-- LINKS SECTION
+This section will contain links for above mentioned web pages
+-->
+
+[NextJS-Link]: nextjs.org
+[Shadcn-Link]: ui.shadcn.com
+[tailwindCSS-Link]: tailwindcss.com
+[Redux-Link]: redux.js.org
+
+<!-- FOOTNOTES -->
+
+[^1]: Level Basics Documentation [(Link)](./documents/BASICS.md)
+
+[^2]: Level Intermediate Documentation [(Link)](./documents/INTERMEDIATE.md)
+
+[^3]: Level Advanced Documentation [(Link)](./documents/ADVANCED.md)
