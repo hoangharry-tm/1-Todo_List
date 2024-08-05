@@ -1,0 +1,20 @@
+.card {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 700px;
+  height: var(--height);
+  max-height: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
