@@ -42,6 +42,10 @@ flaws regarding naming convention and tag rendering which means I should avoid
 calling HTML tags in a .module.scss file for rendering to avoid it affect other
 unwanted tags.
 
+Here are the footage of the final result:
+
+![Result][Result-Video]
+
 #### During the development
 
 During the development process, there is a minor problem that occured to me.
@@ -52,3 +56,5 @@ For this particular issue, I figure out that the useContext hook might solve the
 problem! And since the useContext hook is planned to be in the intermediate level,
 I believe that the basics level is successful and I have learned a lot along the
 way.
+
+[Result-Video]: media/basics/result-video-basic-level.mov
