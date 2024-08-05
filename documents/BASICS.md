@@ -57,4 +57,4 @@ problem! And since the useContext hook is planned to be in the intermediate leve
 I believe that the basics level is successful and I have learned a lot along the
 way.
 
-[Result-Video]: media/basics/result-video-basic-level.gif
+[Result-Video]: media/basics/result-basic-level.gif
