@@ -1,12 +1,15 @@
-import React from "react";
+"use client";
+
 import Card from "@/components/commons/Card";
+import React from "react";
 import styles from "./TaskList.module.scss";
-import { dummyData } from "./dummyData";
+import { useDataContext } from "@/app/_contexts/Tasks";
 
 const TaskCard: React.FC = () => {
+  const { data, setData } = useDataContext();
   return (
     <div>
-      {dummyData.map((task, index) => {
+      {data.map((task, index) => {
         return <Card key={index} title={task.name} desc={task.desc} />;
       })}
     </div>

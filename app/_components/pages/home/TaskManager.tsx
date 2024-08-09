@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import setData, { dummyData } from "./dummyData";
+import React, { useContext, useState } from "react";
 import styles from "./TaskManager.module.scss";
+import { useDataContext } from "@/app/_contexts/Tasks";
 
 export default function TaskManager() {
-  const [tasks, setTasks] = useState(dummyData);
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
+  const { data, setData } = useDataContext();
 
   const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
@@ -15,21 +15,12 @@ export default function TaskManager() {
   const handleChangeDesc = (e: React.ChangeEvent<HTMLInputElement>) => {
     setDesc(e.target.value);
   };
-  const handleFormSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log({ name, desc });
-    setTasks([...tasks, { name, desc }]);
-    // console.log(tasks);
+    setData([...data, { name, desc }]);
     setName("");
     setDesc("");
   };
-  useEffect(() => {
-    console.log("Here is the Effect Hook: \n");
-    console.log(tasks);
-
-    setData(tasks[tasks.length - 1]);
-    console.log(dummyData);
-  }, [tasks]);
 
   return (
     <form className={styles.form}>
@@ -41,7 +32,7 @@ export default function TaskManager() {
         Any description?{" "}
         <input type="text" value={desc} onChange={handleChangeDesc} />
       </label>
-      <button type="submit" onClick={handleFormSubmit}>
+      <button type="submit" onClick={handleSubmit}>
         Create
       </button>
     </form>
