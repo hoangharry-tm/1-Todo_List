@@ -58,7 +58,7 @@ whole process of learning and planning.
 
 In this level I mainly focus on learning the basics of ReactJS, which includes:
 
-- React Hooks (useState, useEffect)
+- React Hooks
 - Functional Components
 - Conditional Rendering, and
 - List Rendering
@@ -102,7 +102,5 @@ This section will contain links for above mentioned web pages
 <!-- FOOTNOTES -->
 
 [^1]: Level Basics Documentation [(Link)](documents/BASICS.md)
-
 [^2]: Level Intermediate Documentation [(Link)](documents/INTERMEDIATE.md)
-
 [^3]: Level Advanced Documentation [(Link)](documents/ADVANCED.md)
