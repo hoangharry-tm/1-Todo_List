@@ -25,14 +25,14 @@ export default function TaskManager() {
   return (
     <form className={styles.form}>
       <label>
-        Please provide the task&apos; name:{" "}
+        Please provide the task&apos;s name:{" "}
         <input type="text" value={name} onChange={handleChangeName} />
       </label>
       <label>
         Any description?{" "}
         <input type="text" value={desc} onChange={handleChangeDesc} />
       </label>
-      <button type="submit" onClick={handleSubmit}>
+      <button type="submit" onClick={handleSubmit} className={styles.btn}>
         Create
       </button>
     </form>

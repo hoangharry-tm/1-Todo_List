@@ -61,6 +61,16 @@ there are some problems occured related to type errors.
   so that when the consumer extract this context, it will have the default data
   as well as a function to manipulate it.
 
+#### The results?
+
+##### v2.1: Create task successfully
+
+![Gif - Create task successfully by using the `useContext()` hook][GIF-v2.1]
+
+<!-- Links section -->
+
+[GIF-v2.1]: (media/intermediate/result-intermediate-level-create-task-success.gif)
+
 <!-- Foot notes section -->
 
 [^1]: [Basic Level Document](./BASICS.md)
