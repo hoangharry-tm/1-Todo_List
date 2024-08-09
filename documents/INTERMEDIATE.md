@@ -63,4 +63,4 @@ there are some problems occured related to type errors.
 
 <!-- Foot notes section -->
 
-[^1]: BASICS.md
+[^1]: [Basic Level Document](./BASICS.md)
