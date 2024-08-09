@@ -67,9 +67,26 @@ there are some problems occured related to type errors.
 
 ![Gif - Create task successfully by using the `useContext()` hook][GIF-v2.1]
 
+As demonstrated above, by using the `useContext()` hook, I have successfully
+share the task list among other components in the application. However there are
+some problems I haven't solved yet: I haven't checked if the input boxes aren't
+empty before submit the form, which will create an empty task item like follow:
+
+![Empty Task Box][PIC-emty-task-box]
+
+To fix the problem, I simply check the `name` and `desc` are not empty before
+submit:
+
+```typescript
+if (!name && !desc) return;
+```
+
+##### v2.2: Add and update task
+
 <!-- Links section -->
 
-[GIF-v2.1]: (media/intermediate/result-intermediate-level-create-task-success.gif)
+[GIF-v2.1]: media/intermediate/result-intermediate-level-create-task-success.gif
+[PIC-emty-task-box]: media/intermediate/empty-task-error.png
 
 <!-- Foot notes section -->
 
