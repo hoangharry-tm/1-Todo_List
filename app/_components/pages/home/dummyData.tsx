@@ -1,19 +1,9 @@
-"use client";
-
-import {
-  createContext,
-  Dispatch,
-  SetStateAction,
-  useContext,
-  useState,
-} from "react";
-
-interface ITask {
+interface TaskCardInfo {
   name: string;
   desc?: string;
 }
 
-export const _tasks: ITask[] = [
+export let dummyData: TaskCardInfo[] = [
   {
     name: "Do the homework",
     desc: "Have to do the homework for a Math class",
@@ -54,31 +44,6 @@ export const _tasks: ITask[] = [
   },
 ];
 
-type DataContext = {
-  data: ITask[];
-  setData: Dispatch<SetStateAction<ITask[]>>;
-};
-
-const DataContext = createContext<DataContext | null>(null);
-
-export function DataContextProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [data, setData] = useState(_tasks);
-  return (
-    <DataContext.Provider value={{ data, setData }}>
-      {children}
-    </DataContext.Provider>
-  );
-}
-
-export function useDataContext() {
-  const context = useContext(DataContext);
-  if (context === null) {
-    throw new Error("useDataContext must be used within a DataContextProvider");
-  }
-
-  return context;
+export default function setData(data: TaskCardInfo) {
+  return dummyData.push(data);
 }
