@@ -18,7 +18,7 @@ export default function TaskManager() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!name && !desc) return; // Check if name and desc are not empty
+    if (!name) return; // Check if name and desc are not empty
 
     setData([...data, { name, desc }]);
     setName("");

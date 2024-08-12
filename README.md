@@ -75,9 +75,9 @@ on learning **server actions** as well as improving the UI of the application
 through animations. Here are the goals of this level:
 
 - Learn advanced React Hooks (useContext, useRef, etc.)
-- Learn **NextJS API Routing System** _and_ **Middlewares**
-- Using ORM library to interact with databases and do basic actions
-- Authentication
+- Know how to create custom hook
+- Learn basic animation in CSS
+- Improve the project structure
 
 Last but not least, learning a state management tool like [Redux][Redux-Link]
 is also in plan!
@@ -85,10 +85,15 @@ is also in plan!
 ##### Advanced [^3]
 
 To wrap up the project, I will refactor the whole code base to have a cleaner
-look. Speaking of which, implementing a _clean architecture_ is also an
-important aspect in application development in general, thus I plan to refactor
-the code base in this specific direction. Ultimately, the last 2 topics that I
-want to learn are Lazy Loading and Memoization.
+look by implementing a _clean architecture_. Moreover, to better finalize the
+project, I have the following goals:
+
+- Learn **NextJS API Routing System** _and_ **Middlewares**
+- Using ORM library to interact with databases and do basic actions
+- Authentication
+
+And for all of the above goals I have achieved in this specific project, I have
+successfully created a full stack project and learned a lot from it!
 
 <!-- LINKS SECTION
 This section will contain links for above mentioned web pages

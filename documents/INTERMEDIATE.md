@@ -74,19 +74,61 @@ empty before submit the form, which will create an empty task item like follow:
 
 ![Empty Task Box][PIC-emty-task-box]
 
-To fix the problem, I simply check the `name` and `desc` are not empty before
+To fix the problem, I simply check the `name` input field is not empty before
 submit:
 
 ```typescript
-if (!name && !desc) return;
+if (!name) return;
 ```
 
-##### v2.2: Add and update task
+##### v2.2: Remove and update task
+
+![GIF-v2.2-Full Feature Demo][GIF-v2.2-Full_Feature_Demo]
+
+In the version 2.2, I have add the feature to add and edit task by using basic
+form actions. With the help of `useState()` hook, I can capture the new value
+and update it to the applying context with `setData()`
+
+```typescript
+const handleEdit = (e: React.FormEvent) => {
+  e.preventDefault();
+  if (!titleEdit) return;
+  if (titleEdit === title && descEdit === desc) return;
+  setData(
+    data.map((task, i) =>
+      i === idx ? { name: titleEdit, desc: descEdit } : task
+    )
+  );
+  setEditing(false);
+};
+const [titleEdit, setTitleEdit] = React.useState<string>(title);
+const [descEdit, setDescEdit] = React.useState<string | undefined>(desc);
+```
+
+In the `handleEdit()` function, firstly, I prevents the default form submission behavior by using `e.preventDefault();`. After that, I will need to check and
+make sure after editing, the title is not empty as well as they are not the same
+as the original task. Therefore there are 2 if statements in the above code. Then,
+I update the data state by mapping over the tasks and replacing the task at the specified `idx` with the edited values. Ultimately, setting the `editting` state
+to `false` to close the changing form.
+
+In case of deleting task, it is much simpler:
+
+```typescript
+const handleDelete = (e: React.MouseEvent) => {
+  setData(data.filter((_, i) => i !== idx));
+};
+```
+
+The function removes the task at index `idx` from the data array by filtering it
+out and updating the data state with the new array. The reason for the `_`
+(underscore) symbol to be used in this context is because I do not care about the
+value at that index.
 
 <!-- Links section -->
 
-[GIF-v2.1]: media/intermediate/result-intermediate-level-create-task-success.gif
 [PIC-emty-task-box]: media/intermediate/empty-task-error.png
+[GIF-v2.1]: media/intermediate/result-intermediate-level-create-task-success.gif
+[GIF-v2.2-Full_Feature_Demo]: media/intermediate/result-intermediate-level-full-feature.gif
 
 <!-- Foot notes section -->
 
