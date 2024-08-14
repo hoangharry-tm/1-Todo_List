@@ -105,10 +105,12 @@ const [titleEdit, setTitleEdit] = React.useState<string>(title);
 const [descEdit, setDescEdit] = React.useState<string | undefined>(desc);
 ```
 
-In the `handleEdit()` function, firstly, I prevents the default form submission behavior by using `e.preventDefault();`. After that, I will need to check and
-make sure after editing, the title is not empty as well as they are not the same
-as the original task. Therefore there are 2 if statements in the above code. Then,
-I update the data state by mapping over the tasks and replacing the task at the specified `idx` with the edited values. Ultimately, setting the `editting` state
+In the `handleEdit()` function, firstly, I prevents the default form submission 
+behavior by using `e.preventDefault();`. After that, I will need to check and 
+make sure after editing, the title is not empty as well as they are not the same 
+as the original task. Therefore there are 2 if statements in the above code. Then, 
+I update the data state by mapping over the tasks and replacing the task at the 
+specified `idx` with the edited values. Ultimately, setting the `editting` state 
 to `false` to close the changing form.
 
 In case of deleting task, it is much simpler:

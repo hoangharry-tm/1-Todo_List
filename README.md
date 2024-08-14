@@ -60,7 +60,7 @@ In this level I mainly focus on learning the basics of ReactJS, which includes:
 
 - React Hooks
 - Functional Components
-- Conditional Rendering, and
+- Conditional Rendering, and,
 - List Rendering
 
 Moreover, apart from learning those mentioned features provided by Nextjs, I
@@ -75,7 +75,7 @@ on learning **server actions** as well as improving the UI of the application
 through animations. Here are the goals of this level:
 
 - Learn advanced React Hooks (useContext, useRef, etc.)
-- Know how to create custom hook
+- Know how to create custom hooks
 - Learn basic animation in CSS
 - Improve the project structure
 
