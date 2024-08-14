@@ -1,7 +1,6 @@
 import { TaskList } from "@/components/pages/home/TaskList";
-import TaskManager from "./_components/pages/home/TaskManager";
 import styles from "./page.module.scss";
-import { DataContextProvider } from "./_contexts/Tasks";
+import TaskManager from "./_components/pages/home/TaskManager";
 
 export default function Home() {
   return (
@@ -9,13 +8,11 @@ export default function Home() {
       {/* App's Title */}
       <h1 className={styles.title}>🏔️ Todo List App 🚀</h1>
 
-      <DataContextProvider>
-        {/* List of tasks */}
-        <TaskList />
+      {/* List of tasks */}
+      <TaskList />
 
-        {/* Task Management - CRUD */}
-        <TaskManager />
-      </DataContextProvider>
+      {/* Task Management - CRUD */}
+      <TaskManager />
     </div>
   );
 }
