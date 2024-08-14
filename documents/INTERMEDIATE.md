@@ -1,6 +1,6 @@
 <div align="center">
   <h3>Intermediate Level</h3>
-  <p><i>Don’t Wait for Opportunity, Create it!</i></p>
+  <p><i>👑 Don’t Wait for Opportunity, Create it!</i></p>
 </div>
 
 As metioned before in the Basic Level document [^1], during the process of
@@ -29,9 +29,9 @@ there are some problems occured related to type errors.
 
 - When create a new context, the typescript compiler requires to pass in the initial
   value through the `createContext()` function. And if we pass in the `null` value,
-  the compiler will screams for errors when we extract and use the context. Thus,
+  the compiler will scream for errors when we extract and use the context. Thus,
   the solution for this problem is to create <b>a custom hook</b> that will handle
-  the null value if `useContext()` is use outside of the _Context Provider_. Here
+  the null value if `useContext()` is used outside of the _Context Provider_. Here
   is the code:
 
   ```typescript
@@ -68,9 +68,9 @@ there are some problems occured related to type errors.
 ![Gif - Create task successfully by using the `useContext()` hook][GIF-v2.1]
 
 As demonstrated above, by using the `useContext()` hook, I have successfully
-share the task list among other components in the application. However there are
-some problems I haven't solved yet: I haven't checked if the input boxes aren't
-empty before submit the form, which will create an empty task item like follow:
+share the task list among other components in the application. However there is
+a problem I haven't solved yet: I haven't checked whether the input boxes are empty
+or not before submit the form, which will create an empty task item like follow:
 
 ![Empty Task Box][PIC-emty-task-box]
 
@@ -105,12 +105,12 @@ const [titleEdit, setTitleEdit] = React.useState<string>(title);
 const [descEdit, setDescEdit] = React.useState<string | undefined>(desc);
 ```
 
-In the `handleEdit()` function, firstly, I prevents the default form submission 
-behavior by using `e.preventDefault();`. After that, I will need to check and 
-make sure after editing, the title is not empty as well as they are not the same 
-as the original task. Therefore there are 2 if statements in the above code. Then, 
-I update the data state by mapping over the tasks and replacing the task at the 
-specified `idx` with the edited values. Ultimately, setting the `editting` state 
+In the `handleEdit()` function, firstly, I prevents the default form submission
+behavior by using `e.preventDefault();`. After that, I will need to check and
+make sure after editing, the title is not empty as well as they are not the same
+as the original task. Therefore there are 2 if statements in the above code. Then,
+I update the data state by mapping over the tasks and replacing the task at the
+specified `idx` with the edited values. Ultimately, setting the `editting` state
 to `false` to close the changing form.
 
 In case of deleting task, it is much simpler:
@@ -125,6 +125,11 @@ The function removes the task at index `idx` from the data array by filtering it
 out and updating the data state with the new array. The reason for the `_`
 (underscore) symbol to be used in this context is because I do not care about the
 value at that index.
+
+And that's it for the intermediate level! All in all, I am pretty happy with the
+results, I have learned a lot along the way, and for the next level - advanced level,
+I will learn how to create a **CRUD API** as well as the **Middlewares** using the
+Nextjs `route.js system`.
 
 <!-- Links section -->
 
