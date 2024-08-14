@@ -58,7 +58,7 @@ whole process of learning and planning.
 
 In this level I mainly focus on learning the basics of ReactJS, which includes:
 
-- React Hooks
+- React Hooks (useState, useEffect)
 - Functional Components
 - Conditional Rendering, and,
 - List Rendering
@@ -85,15 +85,10 @@ is also in plan!
 ##### Advanced [^3]
 
 To wrap up the project, I will refactor the whole code base to have a cleaner
-look by implementing a _clean architecture_. Moreover, to better finalize the
-project, I have the following goals:
-
-- Learn **NextJS API Routing System** _and_ **Middlewares**
-- Using ORM library to interact with databases and do basic actions
-- Authentication
-
-And for all of the above goals I have achieved in this specific project, I have
-successfully created a full stack project and learned a lot from it!
+look. Speaking of which, implementing a _clean architecture_ is also an
+important aspect in application development in general, thus I plan to refactor
+the code base in this specific direction. Ultimately, the last 2 topics that I
+want to learn are Lazy Loading and Memoization.
 
 <!-- LINKS SECTION
 This section will contain links for above mentioned web pages
@@ -105,6 +100,7 @@ This section will contain links for above mentioned web pages
 [Redux-Link]: redux.js.org
 
 <!-- FOOTNOTES -->
+
 
 [^1]: Level Basics Documentation [(Link)](./documents/BASICS.md)
 [^2]: Level Intermediate Documentation [(Link)](./documents/INTERMEDIATE.md)

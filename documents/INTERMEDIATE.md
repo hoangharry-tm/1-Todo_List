@@ -140,3 +140,4 @@ Nextjs `route.js system`.
 <!-- Foot notes section -->
 
 [^1]: [Basic Level Document](./BASICS.md)
+
