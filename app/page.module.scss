@@ -1,12 +1,39 @@
 .outer {
-  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+}
+
+.pomodoroImg {
+  z-index: -1;
+  object-fit: contain;
+  object-position: left;
+}
+
+.imgWrapper {
+  grid-column-start: 1;
+
+  position: relative;
   height: 100vh;
+  overflow: hidden;
+}
+
+.formWrapper {
+  grid-column-start: 2;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
   text-align: center;
   padding: 10px;
-  position: sticky;
+  font-style: italic;
+}
+
+.subtitle {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
 }

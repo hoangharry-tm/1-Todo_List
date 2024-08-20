@@ -3,7 +3,7 @@ import { Lora } from "next/font/google";
 import "@/styles/global.scss";
 
 const font = Lora({
-  style: "italic",
+  // style: "italic",
   subsets: ["latin"],
 });
 

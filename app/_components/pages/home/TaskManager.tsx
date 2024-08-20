@@ -2,7 +2,7 @@
 
 import React, { useContext, useState } from "react";
 import styles from "./TaskManager.module.scss";
-import { useDataContext } from "@/app/_contexts/Tasks";
+import { useDataContext } from "@/app/_contexts/DataContext";
 
 export default function TaskManager() {
   const [name, setName] = useState("");

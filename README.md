@@ -44,10 +44,14 @@ whole process of learning and planning.
    - Conditional Rendering
    - Rendering Lists
    - Type Safety by using TypeScript Types and Interfaces
+   - Client-side rendering and Server-side rendering
+   - State management with Contexts (`useContext()` hook in ReactJS) and Redux toolkit
+   - Integrate Firebase for database usage and manipulation
+   - Authentication
    - Basics **CRUD API** _and_ **middleware** using NextJS server components
 2. Markdown
 3. Git and Github
-   - Pull Request
+   - Pull Requests
    - Git Merge / Rebase / Squash
    - Version Control
    - Gitflow
@@ -71,13 +75,13 @@ or [tailwindCSS][tailwindCSS-Link] more efficient.
 ##### Intermediate [^2]
 
 After having basic understanding of how ReactJS works, I will spend more time
-on learning **server actions** as well as improving the UI of the application
-through animations. Here are the goals of this level:
+on learning **server actions** as well as managing the global states within components.
+Here are the goals of this level:
 
 - Learn advanced React Hooks (useContext, useRef, etc.)
 - Know how to create custom hooks
-- Learn basic animation in CSS
 - Improve the project structure
+- Learn basic animation in CSS
 
 Last but not least, learning a state management tool like [Redux][Redux-Link]
 is also in plan!
@@ -85,15 +89,28 @@ is also in plan!
 ##### Advanced [^3]
 
 To wrap up the project, I will refactor the whole code base to have a cleaner
-look by implementing a _clean architecture_. Moreover, to better finalize the
-project, I have the following goals:
+look by implementing a _clean architecture_. Nevertheless, I will try to have the
+MVP (Minimal Viable Product) version working first before I could do anything else.
+Therefore, my main focus on this level are still:
 
-- Learn **NextJS API Routing System** _and_ **Middlewares**
-- Using ORM library to interact with databases and do basic actions
-- Authentication
+- Learn **NextJS API Routing System** _and_ **Middlewares** to implement the backend
+  logics for the project
+- Interact with databases and do basic actions of reading and writing data
+- Authentication with
+  - Email and password
+  - Github Authentication
+  - Google Authentication
+- Global state management with [Redux][Redux-Link]
 
-And for all of the above goals I have achieved in this specific project, I have
-successfully created a full stack project and learned a lot from it!
+Ultimately, that is the end of the project, albeit it is small but I have learned
+a lot of new knowledge through it. In the process of doing these projects, I do not
+follow any single tutorial to avoid _tutorial hell_ and instead I will try to do
+some google search for any problems I faced along the way.
+
+I'm truly happy with the results and thank you for following my journey! Here is
+the full demo of the project:
+
+<!-- TODO: Put a full demo here! -->
 
 <!-- LINKS SECTION
 This section will contain links for above mentioned web pages

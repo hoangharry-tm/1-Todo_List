@@ -1,16 +1,16 @@
 <div align="center">
   <h3>Intermediate Level</h3>
-  <p><i>👑 Don’t Wait for Opportunity, Create it!</i></p>
+  <p>👑 <i>Don’t Wait for Opportunity, Create it!</i></p>
 </div>
 
 As metioned before in the Basic Level document [^1], during the process of
 creating a form to add new tasks, there are quite a few problems: <br/>
 
-1. First of all, because there 2 separate components that use the same data, I
-   noticed that whenever create an object with useState, it create a clone of the
+1. First of all, because there _2 separate components_ that use the same data, I
+   noticed that whenever create an object with `useState`, it create a clone of the
    real data. In another word, it means each component will have a different clone
    of the data and when one of them update the data, other components will not catch
-   the changes. Thus, this has introduced me to the useContext hook.
+   the changes. Thus, this has introduced me to the `useContext()` hook.
 2. Secondly, for the folder structure, I recognize that, because the context hooks
    will be used in many other components so I have created a new `_contexts/` folder
    to store all of the contexts.
@@ -22,7 +22,7 @@ The goals for this level are:
 2. Organize the folder structure
 3. Implement other features: Update, Delete tasks
 
-#### The `useContext` hook:
+#### Learning the `useContext` hook:
 
 Learning the useContext hook is absolutely challenging! Since I use Typescript,
 there are some problems occured related to type errors.
@@ -124,12 +124,12 @@ const handleDelete = (e: React.MouseEvent) => {
 The function removes the task at index `idx` from the data array by filtering it
 out and updating the data state with the new array. The reason for the `_`
 (underscore) symbol to be used in this context is because I do not care about the
-value at that index.
+value at that index!
 
 And that's it for the intermediate level! All in all, I am pretty happy with the
-results, I have learned a lot along the way, and for the next level - advanced level,
-I will learn how to create a **CRUD API** as well as the **Middlewares** using the
-Nextjs `route.js system`.
+results, I have learned a lot along the way, and for the next level - advanced level
+[^2], I will learn how to create a **CRUD API** as well as the **Middlewares** using
+the Nextjs `route.js system`.
 
 <!-- Links section -->
 
@@ -140,3 +140,4 @@ Nextjs `route.js system`.
 <!-- Foot notes section -->
 
 [^1]: [Basic Level Document](./BASICS.md)
+[^2]: [Advance Level Document](./ADVANCED.md)

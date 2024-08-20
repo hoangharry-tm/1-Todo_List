@@ -3,7 +3,7 @@
 import Card from "@/components/commons/Card";
 import React from "react";
 import styles from "./TaskList.module.scss";
-import { useDataContext } from "@/app/_contexts/Tasks";
+import { useDataContext } from "@/app/_contexts/DataContext";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 
